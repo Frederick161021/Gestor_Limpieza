@@ -19,9 +19,8 @@ public class Trabajador extends Persona {
      * 
      * @param trabajadorId
      * @param cuadrillaId
-     * @param especialidad 
      */
-    public Trabajador(int trabajadorId, int cuadrillaId, String especialidad) {
+    public Trabajador(int trabajadorId, int cuadrillaId) {
         this.trabajadorId = trabajadorId;
         this.cuadrillaId = cuadrillaId;
     }

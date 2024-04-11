@@ -17,7 +17,6 @@ public class JefeCuadrilla extends Persona implements Observer {
     /**
      * 
      * @param jefeCuadrillaId
-     * @param sector 
      */
     public JefeCuadrilla(int jefeCuadrillaId) {
         this.jefeCuadrillaId = jefeCuadrillaId;
