@@ -9,7 +9,6 @@ public class Trabajador extends Persona {
 
     private int trabajadorId;
     private int cuadrillaId;
-    private String especialidad;
     
     /**
      * Default constructor
@@ -25,14 +24,12 @@ public class Trabajador extends Persona {
     public Trabajador(int trabajadorId, int cuadrillaId, String especialidad) {
         this.trabajadorId = trabajadorId;
         this.cuadrillaId = cuadrillaId;
-        this.especialidad = especialidad;
     }
 
     /**
      * 
      * @param trabajadorId
      * @param cuadrillaId
-     * @param especialidad
      * @param personaId
      * @param nombre
      * @param rol
@@ -42,11 +39,10 @@ public class Trabajador extends Persona {
      * @param nombreUsuario
      * @param contraseña 
      */
-    public Trabajador(int trabajadorId, int cuadrillaId, String especialidad, String personaId, String nombre, char rol, String apellidoPaterno, String apellidoMaterno, int salario, String nombreUsuario, String contraseña) {
+    public Trabajador(int trabajadorId, int cuadrillaId, String personaId, String nombre, char rol, String apellidoPaterno, String apellidoMaterno, int salario, String nombreUsuario, String contraseña) {
         super(personaId, nombre, rol, apellidoPaterno, apellidoMaterno, salario, nombreUsuario, contraseña);
         this.trabajadorId = trabajadorId;
         this.cuadrillaId = cuadrillaId;
-        this.especialidad = especialidad;
     }
 
     public int getTrabajadorId() {
@@ -63,14 +59,6 @@ public class Trabajador extends Persona {
 
     public void setCuadrillaId(int cuadrillaId) {
         this.cuadrillaId = cuadrillaId;
-    }
-
-    public String getEspecialidad() {
-        return especialidad;
-    }
-
-    public void setEspecialidad(String especialidad) {
-        this.especialidad = especialidad;
     }
     
 }
