@@ -8,7 +8,6 @@ import java.util.*;
 public class JefeCuadrilla extends Persona implements Observer {
 
     private int jefeCuadrillaId;
-    private String sector;
     
     /**
      * Default constructor
@@ -18,17 +17,14 @@ public class JefeCuadrilla extends Persona implements Observer {
     /**
      * 
      * @param jefeCuadrillaId
-     * @param sector 
      */
-    public JefeCuadrilla(int jefeCuadrillaId, String sector) {
+    public JefeCuadrilla(int jefeCuadrillaId) {
         this.jefeCuadrillaId = jefeCuadrillaId;
-        this.sector = sector;
     }
 
-    public JefeCuadrilla(int jefeCuadrillaId, String sector, String personaId, String nombre, char rol, String apellidoPaterno, String apellidoMaterno, int salario, String nombreUsuario, String contraseña) {
+    public JefeCuadrilla(int jefeCuadrillaId, String personaId, String nombre, char rol, String apellidoPaterno, String apellidoMaterno, int salario, String nombreUsuario, String contraseña) {
         super(personaId, nombre, rol, apellidoPaterno, apellidoMaterno, salario, nombreUsuario, contraseña);
         this.jefeCuadrillaId = jefeCuadrillaId;
-        this.sector = sector;
     }
     
     
@@ -39,14 +35,6 @@ public class JefeCuadrilla extends Persona implements Observer {
 
     public void setJefeCuadrillaId(int jefeCuadrillaId) {
         this.jefeCuadrillaId = jefeCuadrillaId;
-    }
-
-    public String getSector() {
-        return sector;
-    }
-
-    public void setSector(String sector) {
-        this.sector = sector;
     }
     
     /**
