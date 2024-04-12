@@ -1,5 +1,4 @@
 package Modelo;
-import java.util.*;
 
 /**
  * 
@@ -20,6 +19,22 @@ public class Administrador extends Persona {
      * @param AdministradorId 
      */
     public Administrador(int AdministradorId) {
+        this.AdministradorId = AdministradorId;
+    }
+    
+    /**
+     * 
+     * @param AdministradorId
+     * @param personaId
+     * @param nombre
+     * @param rol
+     * @param apellidoPaterno
+     * @param apellidoMaterno
+     * @param nombreUsuario
+     * @param contraseña 
+     */
+    public Administrador(int AdministradorId, String personaId, String nombre, char rol, String apellidoPaterno, String apellidoMaterno, String nombreUsuario, String contraseña) {
+        super(personaId, nombre, rol, apellidoPaterno, apellidoMaterno, nombreUsuario, contraseña);
         this.AdministradorId = AdministradorId;
     }
     

@@ -1,5 +1,4 @@
 package Modelo;
-import java.util.*;
 
 /**
  * 
@@ -12,7 +11,6 @@ public abstract class Persona  {
     private char rol;
     private String apellidoPaterno;
     private String apellidoMaterno;
-    private int salario;
     private String nombreUsuario;
     private String contraseña;
 
@@ -21,13 +19,22 @@ public abstract class Persona  {
      */
     public Persona() {}
 
-    public Persona(String personaId, String nombre, char rol, String apellidoPaterno, String apellidoMaterno, int salario, String nombreUsuario, String contraseña) {
+    /**
+     * 
+     * @param personaId
+     * @param nombre
+     * @param rol
+     * @param apellidoPaterno
+     * @param apellidoMaterno
+     * @param nombreUsuario
+     * @param contraseña 
+     */
+    public Persona(String personaId, String nombre, char rol, String apellidoPaterno, String apellidoMaterno, String nombreUsuario, String contraseña) {
         this.personaId = personaId;
         this.nombre = nombre;
         this.rol = rol;
         this.apellidoPaterno = apellidoPaterno;
         this.apellidoMaterno = apellidoMaterno;
-        this.salario = salario;
         this.nombreUsuario = nombreUsuario;
         this.contraseña = contraseña;
     }
@@ -70,14 +77,6 @@ public abstract class Persona  {
 
     public void setApellidoMaterno(String apellidoMaterno) {
         this.apellidoMaterno = apellidoMaterno;
-    }
-
-    public int getSalario() {
-        return salario;
-    }
-
-    public void setSalario(int salario) {
-        this.salario = salario;
     }
 
     public String getNombreUsuario() {

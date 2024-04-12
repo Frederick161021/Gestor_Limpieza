@@ -16,7 +16,6 @@ CREATE TABLE `Persona` (
     `nombre` VARCHAR(50) NOT NULL,
     `apellidoPaterno` VARCHAR(50) NOT NULL,
     `apellidoMaterno` VARCHAR(50) NOT NULL,
-    `salario` INT NOT NULL,
     `nombreUsuario` VARCHAR(50) NOT NULL,
     `contraseña` VARCHAR(50) NOT NULL,
     PRIMARY KEY (`personaId`)

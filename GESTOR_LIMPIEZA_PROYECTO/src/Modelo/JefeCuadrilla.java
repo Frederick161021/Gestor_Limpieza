@@ -22,8 +22,8 @@ public class JefeCuadrilla extends Persona implements Observer {
         this.jefeCuadrillaId = jefeCuadrillaId;
     }
 
-    public JefeCuadrilla(int jefeCuadrillaId, String personaId, String nombre, char rol, String apellidoPaterno, String apellidoMaterno, int salario, String nombreUsuario, String contraseña) {
-        super(personaId, nombre, rol, apellidoPaterno, apellidoMaterno, salario, nombreUsuario, contraseña);
+    public JefeCuadrilla(int jefeCuadrillaId, String personaId, String nombre, char rol, String apellidoPaterno, String apellidoMaterno, String nombreUsuario, String contraseña) {
+        super(personaId, nombre, rol, apellidoPaterno, apellidoMaterno, nombreUsuario, contraseña);
         this.jefeCuadrillaId = jefeCuadrillaId;
     }
     
