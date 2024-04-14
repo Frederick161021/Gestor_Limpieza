@@ -13,7 +13,7 @@ public class Cuadrilla implements Observer {
     public String estado;
     private ArrayList<Trabajador> trabajadores;
     private JefeCuadrilla jefeCuadrilla;
-    private ArrayList<Trabajo> trabajos;
+    private ArrayList<Actividad> actividades;
     
     /**
      * Default constructor
@@ -28,14 +28,14 @@ public class Cuadrilla implements Observer {
         this.estado = estado;
     }
 
-    public Cuadrilla(int cuadrillaId, int jefeCuadrillaId, String nombre, String estado, ArrayList<Trabajador> trabajadores, JefeCuadrilla jefeCuadrilla, ArrayList<Trabajo> trabajos) {
+    public Cuadrilla(int cuadrillaId, int jefeCuadrillaId, String nombre, String estado, ArrayList<Trabajador> trabajadores, JefeCuadrilla jefeCuadrilla, ArrayList<Actividad> trabajos) {
         this.cuadrillaId = cuadrillaId;
         this.jefeCuadrillaId = jefeCuadrillaId;
         this.nombre = nombre;
         this.estado = estado;
         this.trabajadores = trabajadores;
         this.jefeCuadrilla = jefeCuadrilla;
-        this.trabajos = trabajos;
+        this.actividades = trabajos;
     }
     
     
@@ -110,20 +110,23 @@ public class Cuadrilla implements Observer {
         // TODO implement here
     }
 
-    public ArrayList<Trabajo> getTrabajos() {
-        return trabajos;
+    public ArrayList<Actividad> getActividades() {
+        return actividades;
     }
 
-    public void setTrabajos(ArrayList<Trabajo> trabajos) {
-        this.trabajos = trabajos;
+    public void setActividades(ArrayList<Actividad> actividades) {
+        this.actividades = actividades;
     }
     
-    public void agregarTrabajo(Trabajo trabajo){
+    public void agregarActividad(Actividad actividad){
         //TODO implenment here
     }
 
-    @Override
-    public void update(Observable o, Object arg) {
+    public void update(Actividad actividad) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void update() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

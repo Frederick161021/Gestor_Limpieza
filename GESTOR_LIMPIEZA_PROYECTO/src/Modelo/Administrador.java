@@ -58,7 +58,7 @@ public class Administrador extends Persona {
      * @param jefeCuadrila 
      * @param nuevoTrabajo
      */
-    public void notificarJefeCuadrilla(JefeCuadrilla jefeCuadrila, Trabajo nuevoTrabajo) {
+    public void notificarJefeCuadrilla(JefeCuadrilla jefeCuadrila, Actividad nuevaActividad) {
         // TODO implement here
     }
 

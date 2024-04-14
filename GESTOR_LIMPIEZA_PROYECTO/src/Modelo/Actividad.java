@@ -4,9 +4,9 @@ import java.util.*;
 /**
  * 
  */
-public class Trabajo {
+public class Actividad {
 
-    private int historialTrabajosId;
+    private int historialActividadId;
     private int cveColonia;
     private int cuadrillaId;
     private String descripcion;
@@ -20,11 +20,11 @@ public class Trabajo {
     /**
      * Default constructor
      */
-    public Trabajo() {}
+    public Actividad() {}
 
     /**
      * 
-     * @param historialTrabajosId
+     * @param historialActividadId
      * @param cveColonia
      * @param cuadrillaId
      * @param descripcion
@@ -35,8 +35,8 @@ public class Trabajo {
      * @param colonia
      * @param cuadrilla 
      */
-    public Trabajo(int historialTrabajosId, int cveColonia, int cuadrillaId, String descripcion, String comentarios, String rutaImagen, Date fechaAgendada, String estatus, Colonia colonia, Cuadrilla cuadrilla) {
-        this.historialTrabajosId = historialTrabajosId;
+    public Actividad(int historialActividadId, int cveColonia, int cuadrillaId, String descripcion, String comentarios, String rutaImagen, Date fechaAgendada, String estatus, Colonia colonia, Cuadrilla cuadrilla) {
+        this.historialActividadId = historialActividadId;
         this.cveColonia = cveColonia;
         this.cuadrillaId = cuadrillaId;
         this.descripcion = descripcion;
@@ -48,12 +48,12 @@ public class Trabajo {
         this.cuadrilla = cuadrilla;
     }
 
-    public int getHistorialTrabajosId() {
-        return historialTrabajosId;
+    public int getHistorialActividadId() {
+        return historialActividadId;
     }
 
-    public void setHistorialTrabajosId(int historialTrabajosId) {
-        this.historialTrabajosId = historialTrabajosId;
+    public void setHistorialActividadId(int historialActividadId) {
+        this.historialActividadId = historialActividadId;
     }
 
     public int getCveColonia() {

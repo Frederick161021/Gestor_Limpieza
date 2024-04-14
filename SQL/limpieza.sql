@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 14-04-2024 a las 06:06:41
+-- Tiempo de generación: 14-04-2024 a las 12:46:53
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -5826,24 +5826,64 @@ CREATE TABLE `Cuadrilla` (
   `cuadrillaId` int(11) NOT NULL,
   `jefeCuadrillaId` int(11) NOT NULL,
   `nombre` varchar(50) NOT NULL,
-  `estado` varchar(50) NOT NULL
+  `estado` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `HistorialTrabajos`
+-- Estructura de tabla para la tabla `EstadoCuadrilla`
 --
 
-CREATE TABLE `HistorialTrabajos` (
-  `historialTrabajosId` int(11) NOT NULL,
+CREATE TABLE `EstadoCuadrilla` (
+  `estadoId` int(11) NOT NULL,
+  `estado` varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `EstadoCuadrilla`
+--
+
+INSERT INTO `EstadoCuadrilla` (`estadoId`, `estado`) VALUES
+(1, 'Activo'),
+(2, 'Eliminado');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `EstatusActividad`
+--
+
+CREATE TABLE `EstatusActividad` (
+  `estatusId` int(11) NOT NULL,
+  `estatus` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `EstatusActividad`
+--
+
+INSERT INTO `EstatusActividad` (`estatusId`, `estatus`) VALUES
+(1, 'Espera de Confirmacion'),
+(2, 'Pendinete'),
+(3, 'Finalizada'),
+(4, 'Cancelada');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `HistorialActividad`
+--
+
+CREATE TABLE `HistorialActividad` (
+  `historialActividadId` int(11) NOT NULL,
   `cveColonia` int(11) NOT NULL,
   `cuadrillaId` int(11) NOT NULL,
   `descripcion` text DEFAULT NULL,
   `comentarios` text DEFAULT NULL,
   `rutaImagen` text DEFAULT NULL,
   `fechaAgendada` date DEFAULT NULL,
-  `estatus` varchar(50) NOT NULL
+  `estatus` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -5887,6 +5927,15 @@ CREATE TABLE `Rol` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
+-- Volcado de datos para la tabla `Rol`
+--
+
+INSERT INTO `Rol` (`rolId`, `rol`) VALUES
+(1, 'Administrador'),
+(2, 'Jefe Cuadrilla'),
+(3, 'Trabajador');
+
+--
 -- Índices para tablas volcadas
 --
 
@@ -5900,13 +5949,27 @@ ALTER TABLE `cat_colonias`
 -- Indices de la tabla `Cuadrilla`
 --
 ALTER TABLE `Cuadrilla`
-  ADD PRIMARY KEY (`cuadrillaId`);
+  ADD PRIMARY KEY (`cuadrillaId`),
+  ADD KEY `estado_fk` (`estado`);
 
 --
--- Indices de la tabla `HistorialTrabajos`
+-- Indices de la tabla `EstadoCuadrilla`
 --
-ALTER TABLE `HistorialTrabajos`
-  ADD PRIMARY KEY (`historialTrabajosId`);
+ALTER TABLE `EstadoCuadrilla`
+  ADD PRIMARY KEY (`estadoId`);
+
+--
+-- Indices de la tabla `EstatusActividad`
+--
+ALTER TABLE `EstatusActividad`
+  ADD PRIMARY KEY (`estatusId`);
+
+--
+-- Indices de la tabla `HistorialActividad`
+--
+ALTER TABLE `HistorialActividad`
+  ADD PRIMARY KEY (`historialActividadId`) USING BTREE,
+  ADD KEY `estatus_fk` (`estatus`);
 
 --
 -- Indices de la tabla `MiembrosCuadrilla`
@@ -5938,14 +6001,26 @@ ALTER TABLE `cat_colonias`
   MODIFY `cve_incr_cp` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6721;
 
 --
--- AUTO_INCREMENT de la tabla `HistorialTrabajos`
+-- AUTO_INCREMENT de la tabla `HistorialActividad`
 --
-ALTER TABLE `HistorialTrabajos`
-  MODIFY `historialTrabajosId` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `HistorialActividad`
+  MODIFY `historialActividadId` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Restricciones para tablas volcadas
 --
+
+--
+-- Filtros para la tabla `Cuadrilla`
+--
+ALTER TABLE `Cuadrilla`
+  ADD CONSTRAINT `estado_fk` FOREIGN KEY (`estado`) REFERENCES `EstadoCuadrilla` (`estadoId`);
+
+--
+-- Filtros para la tabla `HistorialActividad`
+--
+ALTER TABLE `HistorialActividad`
+  ADD CONSTRAINT `estatus_fk` FOREIGN KEY (`estatus`) REFERENCES `EstatusActividad` (`estatusId`);
 
 --
 -- Filtros para la tabla `MiembrosCuadrilla`
