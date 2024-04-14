@@ -1,5 +1,32 @@
 GESTOR_LIMPIEZA_PROYECTO/src/Modelo/Conexion.java
-GESTOR_LIMPIEZA_PROYECTO/build/classes/Views_admin/
-GESTOR_LIMPIEZA_PROYECTO/build/classes/Vista/Login.form
-GESTOR_LIMPIEZA_PROYECTO/build/classes/Vista/VistasAdmin/
+
+# NetBeans specific
+GESTOR_LIMPIEZA_PROYECTO/nbproject/private/
+GESTOR_LIMPIEZA_PROYECTO/build/
+GESTOR_LIMPIEZA_PROYECTO/nbbuild/
+GESTOR_LIMPIEZA_PROYECTO/dist/
+GESTOR_LIMPIEZA_PROYECTO/nbactions.xml
+GESTOR_LIMPIEZA_PROYECTO/nb-configuration.xml
+GESTOR_LIMPIEZA_PROYECTO/.nb-gradle/
+GESTOR_LIMPIEZA_PROYECTO/.nb-gradle-build/
+GESTOR_LIMPIEZA_PROYECTO/manifest.mf
+GESTOR_LIMPIEZA_PROYECTO/build.xml
+
+# Compiled files
+*.class
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Maven specific
+/target/
+
+# Gradle specific
+/.gradle/
+
+# IDE metadata
+.idea/
+
 
