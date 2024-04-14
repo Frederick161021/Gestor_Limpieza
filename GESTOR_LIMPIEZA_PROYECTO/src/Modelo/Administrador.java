@@ -21,7 +21,7 @@ public class Administrador extends Persona {
     public Administrador(int AdministradorId) {
         this.AdministradorId = AdministradorId;
     }
-    
+
     /**
      * 
      * @param AdministradorId
@@ -31,10 +31,12 @@ public class Administrador extends Persona {
      * @param apellidoPaterno
      * @param apellidoMaterno
      * @param nombreUsuario
-     * @param contraseña 
+     * @param contraseña
+     * @param telefono
+     * @param email 
      */
-    public Administrador(int AdministradorId, String personaId, String nombre, char rol, String apellidoPaterno, String apellidoMaterno, String nombreUsuario, String contraseña) {
-        super(personaId, nombre, rol, apellidoPaterno, apellidoMaterno, nombreUsuario, contraseña);
+    public Administrador(int AdministradorId, String personaId, String nombre, char rol, String apellidoPaterno, String apellidoMaterno, String nombreUsuario, String contraseña, long telefono, String email) {
+        super(personaId, nombre, rol, apellidoPaterno, apellidoMaterno, nombreUsuario, contraseña, telefono, email);
         this.AdministradorId = AdministradorId;
     }
     

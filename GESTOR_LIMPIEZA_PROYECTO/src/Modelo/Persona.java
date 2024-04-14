@@ -13,6 +13,8 @@ public abstract class Persona  {
     private String apellidoMaterno;
     private String nombreUsuario;
     private String contraseña;
+    private long telefono;
+    private String email;
 
     /**
      * Default constructor
@@ -27,9 +29,11 @@ public abstract class Persona  {
      * @param apellidoPaterno
      * @param apellidoMaterno
      * @param nombreUsuario
-     * @param contraseña 
+     * @param contraseña
+     * @param telefono
+     * @param email 
      */
-    public Persona(String personaId, String nombre, char rol, String apellidoPaterno, String apellidoMaterno, String nombreUsuario, String contraseña) {
+    public Persona(String personaId, String nombre, char rol, String apellidoPaterno, String apellidoMaterno, String nombreUsuario, String contraseña, long telefono, String email) {
         this.personaId = personaId;
         this.nombre = nombre;
         this.rol = rol;
@@ -37,8 +41,10 @@ public abstract class Persona  {
         this.apellidoMaterno = apellidoMaterno;
         this.nombreUsuario = nombreUsuario;
         this.contraseña = contraseña;
+        this.telefono = telefono;
+        this.email = email;
     }
-
+    
     public String getPersonaId() {
         return personaId;
     }
@@ -95,4 +101,21 @@ public abstract class Persona  {
         this.contraseña = contraseña;
     }
 
+    public long getTelefono() {
+        return telefono;
+    }
+
+    public void setTelefono(long telefono) {
+        this.telefono = telefono;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    
 }

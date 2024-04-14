@@ -18,11 +18,13 @@ CREATE TABLE `Persona` (
     `apellidoMaterno` VARCHAR(50) NOT NULL,
     `nombreUsuario` VARCHAR(50) NOT NULL,
     `contraseña` VARCHAR(50) NOT NULL,
+    `email` VARCHAR(50) NOT NULL,
+    `telefono` BIGINT NOT NULL,
     PRIMARY KEY (`personaId`)
 );
 
 CREATE TABLE `Rol` (
-    `rolId` INT NOT NULL,
+    `rolId` INT NOT NULL AUTO_INCREMENT,
     `rol` VARCHAR(50) NOT NULL,
     PRIMARY KEY (`rolId`)
 );
