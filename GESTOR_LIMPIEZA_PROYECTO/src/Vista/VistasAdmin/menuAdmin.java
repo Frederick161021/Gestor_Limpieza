@@ -38,7 +38,6 @@ public class menuAdmin extends javax.swing.JFrame {
         btnReporteFinal = new java.awt.Button();
         lblGestionUsuarios = new javax.swing.JLabel();
         lblGestionCuadrillas = new javax.swing.JLabel();
-        btnGestionColonias = new javax.swing.JLabel();
         lblGestionActividades2 = new javax.swing.JLabel();
         lblReporteFinal = new javax.swing.JLabel();
         btnSalir = new java.awt.Button();
@@ -142,9 +141,6 @@ public class menuAdmin extends javax.swing.JFrame {
         lblGestionCuadrillas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cola.png"))); // NOI18N
         lblGestionCuadrillas.setText("jLabel3");
 
-        btnGestionColonias.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ssss.png"))); // NOI18N
-        btnGestionColonias.setText("jLabel4");
-
         lblGestionActividades2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/crucigrama.png"))); // NOI18N
         lblGestionActividades2.setText("jLabel5");
 
@@ -164,7 +160,7 @@ public class menuAdmin extends javax.swing.JFrame {
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addContainerGap(19, Short.MAX_VALUE)
+                .addContainerGap(22, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -174,10 +170,7 @@ public class menuAdmin extends javax.swing.JFrame {
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btnGestionUsuarios, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(btnGestionCuadrillas, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                        .addComponent(btnGestionColonias, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnColonias, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnColonias, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                             .addComponent(lblGestionActividades2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -207,9 +200,7 @@ public class menuAdmin extends javax.swing.JFrame {
                         .addComponent(btnGestionCuadrillas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(lblGestionCuadrillas))
                 .addGap(32, 32, 32)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnColonias, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnGestionColonias))
+                .addComponent(btnColonias, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(32, 32, 32)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(btnGestionActividadesK, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -309,7 +300,6 @@ public class menuAdmin extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private java.awt.Button btnColonias;
     private java.awt.Button btnGestionActividadesK;
-    private javax.swing.JLabel btnGestionColonias;
     private java.awt.Button btnGestionCuadrillas;
     private java.awt.Button btnGestionUsuarios;
     private java.awt.Button btnReporteFinal;

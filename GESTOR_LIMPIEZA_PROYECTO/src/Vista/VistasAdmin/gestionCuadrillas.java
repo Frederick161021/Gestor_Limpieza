@@ -43,7 +43,6 @@ public class gestionCuadrillas extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         lblGestionCuadrillas = new javax.swing.JLabel();
-        lblGestion2 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         txtNombreCuadrilla = new javax.swing.JTextField();
         cbJefeCuadrilla = new javax.swing.JComboBox<>();
@@ -72,20 +71,12 @@ public class gestionCuadrillas extends javax.swing.JFrame {
         btnGuardar = new java.awt.Button();
         btnActualizar = new java.awt.Button();
         jLabel19 = new javax.swing.JLabel();
-        lblFondo = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
-        lblActualizar = new javax.swing.JLabel();
-        lblGuardar = new javax.swing.JLabel();
-        lblConsultar = new javax.swing.JLabel();
-        lblEliminar = new javax.swing.JLabel();
         btnMenu = new java.awt.Button();
         jLabel24 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
-        lblPuntoRojo = new javax.swing.JLabel();
-        lblVerCuadrillas = new javax.swing.JLabel();
-        lblMenu1 = new javax.swing.JLabel();
 
         menu1.setLabel("File");
         menuBar1.add(menu1);
@@ -220,10 +211,6 @@ public class gestionCuadrillas extends javax.swing.JFrame {
         );
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 40, 290, 20));
-
-        lblGestion2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/unido (1).png"))); // NOI18N
-        lblGestion2.setName("lblManos"); // NOI18N
-        jPanel1.add(lblGestion2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 60, 130, 140));
 
         jPanel3.setBackground(new java.awt.Color(255, 255, 204));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -423,9 +410,6 @@ public class gestionCuadrillas extends javax.swing.JFrame {
         jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/actualizar.png"))); // NOI18N
         jLabel19.setName("lblActualizar"); // NOI18N
 
-        lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/limpieza.png"))); // NOI18N
-        lblFondo.setName("lblTina"); // NOI18N
-
         jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/boton-eliminar.png"))); // NOI18N
         jLabel21.setName("lblBasura"); // NOI18N
 
@@ -435,18 +419,6 @@ public class gestionCuadrillas extends javax.swing.JFrame {
         jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/disco-flexible.png"))); // NOI18N
         jLabel23.setName("lblDisco"); // NOI18N
 
-        lblActualizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/actualizar.png"))); // NOI18N
-        lblActualizar.setName("lblCarrito"); // NOI18N
-
-        lblGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/disco-flexible.png"))); // NOI18N
-        lblGuardar.setName("lblCarrito"); // NOI18N
-
-        lblConsultar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/busqueda-de-datos.png"))); // NOI18N
-        lblConsultar.setName("lblCarrito"); // NOI18N
-
-        lblEliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/boton-eliminar.png"))); // NOI18N
-        lblEliminar.setText("jLabel1");
-
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
         jPanel7.setLayout(jPanel7Layout);
         jPanel7Layout.setHorizontalGroup(
@@ -454,52 +426,33 @@ public class gestionCuadrillas extends javax.swing.JFrame {
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel7Layout.createSequentialGroup()
-                                .addGap(44, 44, 44)
-                                .addComponent(lblGuardar)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel7Layout.createSequentialGroup()
-                                .addGap(47, 47, 47)
-                                .addComponent(lblConsultar)))
+                        .addGap(115, 115, 115)
+                        .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(163, 163, 163)
                         .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel7Layout.createSequentialGroup()
                         .addGap(31, 31, 31)
                         .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(lblActualizar)
-                                .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(lblEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                            .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGap(6, 6, 6)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblFondo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnConsultar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                    .addComponent(btnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnConsultar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
-                .addComponent(lblFondo, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(56, 56, 56)
+                .addGap(212, 212, 212)
                 .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addGap(43, 43, 43)
-                        .addComponent(jLabel23))
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addComponent(lblGuardar)))
-                .addGap(28, 28, 28)
+                .addGap(43, 43, 43)
+                .addComponent(jLabel23)
+                .addGap(70, 70, 70)
                 .addComponent(btnConsultar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel7Layout.createSequentialGroup()
@@ -507,19 +460,13 @@ public class gestionCuadrillas extends javax.swing.JFrame {
                         .addComponent(jLabel22)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addGap(19, 19, 19)
-                        .addComponent(lblConsultar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(93, 93, 93)
                         .addComponent(btnActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(20, 20, 20)
-                        .addComponent(lblActualizar)
-                        .addGap(20, 20, 20)
+                        .addGap(104, 104, 104)
                         .addComponent(btnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addComponent(jLabel19)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(lblEliminar)
-                .addGap(38, 38, 38)
+                .addGap(115, 115, 115)
                 .addComponent(jLabel21)
                 .addGap(9, 9, 9))
         );
@@ -544,22 +491,6 @@ public class gestionCuadrillas extends javax.swing.JFrame {
         jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/menu.png"))); // NOI18N
         jLabel25.setName("lblMenu"); // NOI18N
         jPanel1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 670, 78, -1));
-
-        lblPuntoRojo.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        lblPuntoRojo.setForeground(new java.awt.Color(0, 153, 153));
-        lblPuntoRojo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/punto.png"))); // NOI18N
-        lblPuntoRojo.setText("Clean Colony Manager");
-        lblPuntoRojo.setMaximumSize(new java.awt.Dimension(723, 512));
-        lblPuntoRojo.setName("lblPuntoRojo"); // NOI18N
-        jPanel1.add(lblPuntoRojo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
-        lblVerCuadrillas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ver.png"))); // NOI18N
-        lblVerCuadrillas.setName("lblCarrito"); // NOI18N
-        jPanel1.add(lblVerCuadrillas, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 670, 40, 40));
-
-        lblMenu1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/menu.png"))); // NOI18N
-        lblMenu1.setName("lblCarrito"); // NOI18N
-        jPanel1.add(lblMenu1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 670, 40, 40));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -669,22 +600,13 @@ public class gestionCuadrillas extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JLabel lblActualizar;
-    private javax.swing.JLabel lblConsultar;
     private javax.swing.JLabel lblCuadrillaConformada;
-    private javax.swing.JLabel lblEliminar;
-    private javax.swing.JLabel lblFondo;
-    private javax.swing.JLabel lblGestion2;
     private javax.swing.JLabel lblGestionCuadrillas;
-    private javax.swing.JLabel lblGuardar;
     private javax.swing.JLabel lblIdCuadrilla;
     private javax.swing.JPanel lblJefeCuadrilla;
-    private javax.swing.JLabel lblMenu1;
     private javax.swing.JLabel lblMiembrosDisponibles;
     private javax.swing.JLabel lblNombreCuadrilla;
-    private javax.swing.JLabel lblPuntoRojo;
     private javax.swing.JLabel lblSeleccionarCuadrilla;
-    private javax.swing.JLabel lblVerCuadrillas;
     private java.awt.Menu menu1;
     private java.awt.Menu menu2;
     private java.awt.MenuBar menuBar1;

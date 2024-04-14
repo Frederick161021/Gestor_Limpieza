@@ -290,10 +290,6 @@ public class gestionColonias extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnVerColoniasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerColoniasActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnVerColoniasActionPerformed
-
     private void btnMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenuActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnMenuActionPerformed
@@ -305,6 +301,10 @@ public class gestionColonias extends javax.swing.JFrame {
     private void btnAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnAgregarActionPerformed
+
+    private void btnVerColoniasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerColoniasActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnVerColoniasActionPerformed
 
     /**
      * @param args the command line arguments
