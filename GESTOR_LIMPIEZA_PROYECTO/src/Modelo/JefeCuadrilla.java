@@ -52,12 +52,12 @@ public class JefeCuadrilla extends Persona implements Observer {
      * 
      * @param trabajo 
      */
-    public void notificarCuadrilla(Trabajo trabajo) {
+    public void notificarCuadrilla(Actividad Actividad) {
         // TODO implement here
     }
 
     @Override
-    public void update(Observable o, Object arg) {
+    public void update(Actividad actividad) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
