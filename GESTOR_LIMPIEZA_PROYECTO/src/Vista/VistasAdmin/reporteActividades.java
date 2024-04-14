@@ -165,7 +165,7 @@ public class reporteActividades extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Trebuchet MS", 1, 12)); // NOI18N
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/volver.png"))); // NOI18N
         jLabel7.setName("lblVolver"); // NOI18N
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 420, 90, 40));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 420, 40, 40));
 
         btnVolver.setActionCommand("MENU");
         btnVolver.setBackground(new java.awt.Color(255, 255, 153));

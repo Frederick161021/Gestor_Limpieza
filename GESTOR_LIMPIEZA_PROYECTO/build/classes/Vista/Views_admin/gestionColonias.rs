@@ -1,8 +1,0 @@
-Views_admin.gestionColonias$1
-Views_admin.gestionColonias$2
-Views_admin.gestionColonias$3
-Views_admin.gestionColonias$4
-Views_admin.gestionColonias$5
-Views_admin.gestionColonias$6
-Views_admin.gestionColonias
-Views_admin.gestionColonias$button11

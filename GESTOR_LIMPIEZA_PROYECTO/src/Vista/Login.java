@@ -38,6 +38,7 @@ public class Login extends javax.swing.JFrame {
         btnIngresar = new java.awt.Button();
         jLabel4 = new javax.swing.JLabel();
         txtContraseña = new javax.swing.JPasswordField();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -116,7 +117,7 @@ public class Login extends javax.swing.JFrame {
         btnIngresar.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         btnIngresar.setLabel("INGRESAR");
         btnIngresar.setName("btnIngresar"); // NOI18N
-        Login.add(btnIngresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 400, -1, -1));
+        Login.add(btnIngresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 392, -1, 50));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ingresar.png"))); // NOI18N
         jLabel4.setName("lblIngresar"); // NOI18N
@@ -125,7 +126,10 @@ public class Login extends javax.swing.JFrame {
         txtContraseña.setText("jPasswordField1");
         Login.add(txtContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 300, 330, 40));
 
-        jPanel1.add(Login, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ingresar.png"))); // NOI18N
+        Login.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 400, -1, -1));
+
+        jPanel1.add(Login, new org.netbeans.lib.awtextra.AbsoluteConstraints(-1, 0, 710, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -179,6 +183,7 @@ public class Login extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Login;
     private java.awt.Button btnIngresar;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;

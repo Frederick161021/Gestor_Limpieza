@@ -148,7 +148,7 @@ public class verColonias extends javax.swing.JFrame {
 
         btnVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/volver.png"))); // NOI18N
         btnVolver.setName("lblVolver"); // NOI18N
-        jPanel1.add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 420, 90, 40));
+        jPanel1.add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 420, 40, 40));
 
         jTable6Colonia.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
