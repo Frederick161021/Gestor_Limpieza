@@ -26,7 +26,6 @@ public class VerCuadrillas extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel6 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
@@ -41,9 +40,6 @@ public class VerCuadrillas extends javax.swing.JFrame {
         lblicono = new javax.swing.JLabel();
         lblVolver = new javax.swing.JLabel();
         btnVolver = new java.awt.Button();
-
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/volver.png"))); // NOI18N
-        jLabel6.setText("VOLVER");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -184,7 +180,7 @@ public class VerCuadrillas extends javax.swing.JFrame {
 
         lblVolver.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/volver.png"))); // NOI18N
         lblVolver.setName("lblVolver"); // NOI18N
-        jPanel1.add(lblVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 410, 90, 40));
+        jPanel1.add(lblVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 410, 30, 40));
 
         btnVolver.setActionCommand("MENU");
         btnVolver.setBackground(new java.awt.Color(255, 255, 153));
@@ -256,7 +252,6 @@ public class VerCuadrillas extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private java.awt.Button btnVolver;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;

@@ -26,59 +26,34 @@ public class gestionActividades extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
         lblNuevaActividad = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
-        jPanel5 = new javax.swing.JPanel();
-        jLabel2 = new javax.swing.JLabel();
         lblFecha = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         txtDescripcion = new javax.swing.JTextArea();
-        lblNombreActividad = new javax.swing.JLabel();
-        jdCalendario = new com.toedter.calendar.JDayChooser();
         btnMenu = new java.awt.Button();
         jPanel6 = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
-        jPanel9 = new javax.swing.JPanel();
         lblAsignarActividad = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
         lblSeleccionarCuadrilla = new javax.swing.JLabel();
         txtSeleccionarCuadrilla = new javax.swing.JComboBox<>();
-        lblSeleccionarActividad = new javax.swing.JLabel();
-        txtSeleccionarActividad = new javax.swing.JComboBox<>();
-        txtSeleccionarColonia = new javax.swing.JLabel();
-        lblSeleccionarColonia = new javax.swing.JComboBox<>();
+        lblSeleccionarColonia2 = new javax.swing.JLabel();
+        txtSeleccionarColonia = new javax.swing.JComboBox<>();
         btnGuardarAsignacion = new java.awt.Button();
-        button8 = new java.awt.Button();
         btnVerAsignaciones = new java.awt.Button();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
         lblVerAsignaciones1 = new javax.swing.JLabel();
-        lblGuardarAsignacion1 = new javax.swing.JLabel();
-        btnGuardarActividad = new java.awt.Button();
-        jLabel13 = new javax.swing.JLabel();
-        btnVerActividades = new java.awt.Button();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
         lblDescripcion = new javax.swing.JLabel();
-        txtNombreActividad = new javax.swing.JTextField();
         lblIdActividad = new javax.swing.JLabel();
         txtIdActividad = new javax.swing.JTextField();
         lblicono1 = new javax.swing.JLabel();
-        lblicono4 = new javax.swing.JLabel();
-        lblGuardarAsignacion2 = new javax.swing.JLabel();
-
-        jLabel1.setText("jLabel1");
+        jDateChooser1 = new com.toedter.calendar.JDateChooser();
+        lblGuardarAsignacion1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(797, 0, -1, 700));
 
         jPanel2.setBackground(new java.awt.Color(204, 255, 204));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -95,76 +70,44 @@ public class gestionActividades extends javax.swing.JFrame {
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGap(39, 39, 39)
                 .addComponent(lblNuevaActividad, javax.swing.GroupLayout.PREFERRED_SIZE, 301, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(40, Short.MAX_VALUE))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addComponent(lblNuevaActividad, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 26, Short.MAX_VALUE))
+                .addGap(0, 13, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         jPanel2.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 380, 80));
 
-        jPanel4.setBackground(new java.awt.Color(204, 255, 204));
-        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel2.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); // NOI18N
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/tarea.png"))); // NOI18N
-        jLabel2.setText("CREAR NUEVA TAREA");
-
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
-                .addContainerGap(39, Short.MAX_VALUE)
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 329, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-
-        jPanel4.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 380, 80));
-
-        jPanel2.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
-
         lblFecha.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
         lblFecha.setText("FECHA AGENDADA");
-        jPanel2.add(lblFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 370, -1, -1));
+        jPanel2.add(lblFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 320, -1, -1));
 
         txtDescripcion.setColumns(20);
         txtDescripcion.setRows(5);
         txtDescripcion.setName("txtDescripcion"); // NOI18N
         jScrollPane1.setViewportView(txtDescripcion);
 
-        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 240, 290, 100));
-
-        lblNombreActividad.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
-        lblNombreActividad.setText("NOMBRE ACTIVIDAD");
-        jPanel2.add(lblNombreActividad, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 150, -1, -1));
-        jPanel2.add(jdCalendario, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 400, -1, -1));
+        jPanel2.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 190, 290, 100));
 
         btnMenu.setActionCommand("MENU");
         btnMenu.setBackground(new java.awt.Color(255, 153, 153));
@@ -182,21 +125,6 @@ public class gestionActividades extends javax.swing.JFrame {
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel8.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jPanel9.setBackground(new java.awt.Color(0, 0, 0));
-
-        javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
-        jPanel9.setLayout(jPanel9Layout);
-        jPanel9Layout.setHorizontalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 10, Short.MAX_VALUE)
-        );
-        jPanel9Layout.setVerticalGroup(
-            jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 669, Short.MAX_VALUE)
-        );
-
-        jPanel8.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 10, -1));
 
         lblAsignarActividad.setFont(new java.awt.Font("Trebuchet MS", 1, 18)); // NOI18N
         lblAsignarActividad.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/asignar.png"))); // NOI18N
@@ -223,7 +151,7 @@ public class gestionActividades extends javax.swing.JFrame {
 
         lblSeleccionarCuadrilla.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
         lblSeleccionarCuadrilla.setText("SELECCIONAR CUADRILLA");
-        jPanel6.add(lblSeleccionarCuadrilla, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 280, -1, -1));
+        jPanel6.add(lblSeleccionarCuadrilla, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 210, -1, -1));
 
         txtSeleccionarCuadrilla.setName("cbSeleccionarCuadrilla"); // NOI18N
         txtSeleccionarCuadrilla.addActionListener(new java.awt.event.ActionListener() {
@@ -231,21 +159,14 @@ public class gestionActividades extends javax.swing.JFrame {
                 txtSeleccionarCuadrillaActionPerformed(evt);
             }
         });
-        jPanel6.add(txtSeleccionarCuadrilla, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 310, 340, -1));
+        jPanel6.add(txtSeleccionarCuadrilla, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 240, 340, -1));
 
-        lblSeleccionarActividad.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
-        lblSeleccionarActividad.setText("SELECCIONAR ACTIVIDAD");
-        jPanel6.add(lblSeleccionarActividad, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 140, -1, -1));
+        lblSeleccionarColonia2.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
+        lblSeleccionarColonia2.setText("SELECCIONAR COLONIA");
+        jPanel6.add(lblSeleccionarColonia2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 410, -1, -1));
 
-        txtSeleccionarActividad.setName("cbSeleccionarActividad"); // NOI18N
-        jPanel6.add(txtSeleccionarActividad, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 170, 340, -1));
-
-        txtSeleccionarColonia.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
-        txtSeleccionarColonia.setText("SELECCIONAR COLONIA");
-        jPanel6.add(txtSeleccionarColonia, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 410, -1, -1));
-
-        lblSeleccionarColonia.setName("cbSeleccionarColonia"); // NOI18N
-        jPanel6.add(lblSeleccionarColonia, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 440, 340, -1));
+        txtSeleccionarColonia.setName("cbSeleccionarColonia"); // NOI18N
+        jPanel6.add(txtSeleccionarColonia, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 440, 340, -1));
 
         btnGuardarAsignacion.setActionCommand("MENU");
         btnGuardarAsignacion.setBackground(new java.awt.Color(255, 255, 102));
@@ -257,18 +178,7 @@ public class gestionActividades extends javax.swing.JFrame {
                 btnGuardarAsignacionActionPerformed(evt);
             }
         });
-        jPanel6.add(btnGuardarAsignacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 580, 170, 30));
-
-        button8.setBackground(new java.awt.Color(255, 255, 51));
-        button8.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        button8.setLabel("VER COLONIAS");
-        button8.setName("btnVerColonias"); // NOI18N
-        button8.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button8ActionPerformed(evt);
-            }
-        });
-        jPanel6.add(button8, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 620, 190, 40));
+        jPanel6.add(btnGuardarAsignacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 580, 190, 30));
 
         btnVerAsignaciones.setBackground(new java.awt.Color(255, 153, 0));
         btnVerAsignaciones.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
@@ -279,64 +189,17 @@ public class gestionActividades extends javax.swing.JFrame {
                 btnVerAsignacionesActionPerformed(evt);
             }
         });
-        jPanel6.add(btnVerAsignaciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 637, 170, 40));
-
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ver.png"))); // NOI18N
-        jPanel6.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 660, -1, -1));
-
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/disco-flexible.png"))); // NOI18N
-        jLabel15.setName("lbldisco2"); // NOI18N
-        jPanel6.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 570, -1, -1));
+        jPanel6.add(btnVerAsignaciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 650, 170, 40));
 
         lblVerAsignaciones1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ver.png"))); // NOI18N
         lblVerAsignaciones1.setName("lblCarrito"); // NOI18N
-        jPanel6.add(lblVerAsignaciones1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 640, 40, 40));
-
-        lblGuardarAsignacion1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/disco-flexible.png"))); // NOI18N
-        lblGuardarAsignacion1.setName("lblCarrito"); // NOI18N
-        jPanel6.add(lblGuardarAsignacion1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 560, 70, 70));
+        jPanel6.add(lblVerAsignaciones1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 650, 40, 40));
 
         jPanel2.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 0, 470, 700));
 
-        btnGuardarActividad.setActionCommand("MENU");
-        btnGuardarActividad.setBackground(new java.awt.Color(255, 255, 102));
-        btnGuardarActividad.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        btnGuardarActividad.setLabel("GUARDAR ACTIVIDAD");
-        btnGuardarActividad.setName("btnGuardarActividad"); // NOI18N
-        btnGuardarActividad.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnGuardarActividadActionPerformed(evt);
-            }
-        });
-        jPanel2.add(btnGuardarActividad, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 590, 170, 30));
-
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/menu.png"))); // NOI18N
-        jPanel2.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 660, -1, -1));
-
-        btnVerActividades.setBackground(new java.awt.Color(255, 153, 0));
-        btnVerActividades.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
-        btnVerActividades.setLabel("VER ACTIVIDADES");
-        btnVerActividades.setName("btnVerColonias"); // NOI18N
-        btnVerActividades.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnVerActividadesActionPerformed(evt);
-            }
-        });
-        jPanel2.add(btnVerActividades, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 647, 150, 40));
-
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ver.png"))); // NOI18N
-        jPanel2.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 660, -1, -1));
-
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/disco-flexible.png"))); // NOI18N
-        jLabel14.setName("lblDisco"); // NOI18N
-        jPanel2.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 570, -1, -1));
-
         lblDescripcion.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
         lblDescripcion.setText("DESCRIPCIÓN");
-        jPanel2.add(lblDescripcion, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 210, -1, -1));
-
-        txtNombreActividad.setName("txtIdActividad"); // NOI18N
-        jPanel2.add(txtNombreActividad, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 150, 170, -1));
+        jPanel2.add(lblDescripcion, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 160, -1, -1));
 
         lblIdActividad.setFont(new java.awt.Font("Trebuchet MS", 1, 14)); // NOI18N
         lblIdActividad.setText("ID ACTIVIDAD");
@@ -348,47 +211,32 @@ public class gestionActividades extends javax.swing.JFrame {
         lblicono1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/menu.png"))); // NOI18N
         lblicono1.setName("lblCarrito"); // NOI18N
         jPanel2.add(lblicono1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 650, 40, 40));
+        jPanel2.add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 360, -1, -1));
 
-        lblicono4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ver.png"))); // NOI18N
-        lblicono4.setName("lblCarrito"); // NOI18N
-        jPanel2.add(lblicono4, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 650, 40, 40));
-
-        lblGuardarAsignacion2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/disco-flexible.png"))); // NOI18N
-        lblGuardarAsignacion2.setName("lblCarrito"); // NOI18N
-        jPanel2.add(lblGuardarAsignacion2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 560, 70, 70));
+        lblGuardarAsignacion1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/disco-flexible.png"))); // NOI18N
+        lblGuardarAsignacion1.setName("lblCarrito"); // NOI18N
+        jPanel2.add(lblGuardarAsignacion1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 560, 70, 70));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnGuardarAsignacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarAsignacionActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnGuardarAsignacionActionPerformed
-
     private void btnMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenuActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnMenuActionPerformed
-
-    private void txtSeleccionarCuadrillaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSeleccionarCuadrillaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtSeleccionarCuadrillaActionPerformed
-
-    private void btnGuardarActividadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActividadActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnGuardarActividadActionPerformed
 
     private void btnVerAsignacionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerAsignacionesActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnVerAsignacionesActionPerformed
 
-    private void button8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button8ActionPerformed
+    private void btnGuardarAsignacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarAsignacionActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_button8ActionPerformed
+    }//GEN-LAST:event_btnGuardarAsignacionActionPerformed
 
-    private void btnVerActividadesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerActividadesActionPerformed
+    private void txtSeleccionarCuadrillaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSeleccionarCuadrillaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_btnVerActividadesActionPerformed
+    }//GEN-LAST:event_txtSeleccionarCuadrillaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -426,50 +274,30 @@ public class gestionActividades extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private java.awt.Button btnGuardarActividad;
     private java.awt.Button btnGuardarAsignacion;
     private java.awt.Button btnMenu;
-    private java.awt.Button btnVerActividades;
     private java.awt.Button btnVerAsignaciones;
-    private java.awt.Button button8;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JPanel jPanel1;
+    private com.toedter.calendar.JDateChooser jDateChooser1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
-    private com.toedter.calendar.JDayChooser jdCalendario;
     private javax.swing.JLabel lblAsignarActividad;
     private javax.swing.JLabel lblDescripcion;
     private javax.swing.JLabel lblFecha;
     private javax.swing.JLabel lblGuardarAsignacion1;
-    private javax.swing.JLabel lblGuardarAsignacion2;
     private javax.swing.JLabel lblIdActividad;
-    private javax.swing.JLabel lblNombreActividad;
     private javax.swing.JLabel lblNuevaActividad;
-    private javax.swing.JLabel lblSeleccionarActividad;
-    private javax.swing.JComboBox<String> lblSeleccionarColonia;
+    private javax.swing.JLabel lblSeleccionarColonia2;
     private javax.swing.JLabel lblSeleccionarCuadrilla;
     private javax.swing.JLabel lblVerAsignaciones1;
     private javax.swing.JLabel lblicono1;
-    private javax.swing.JLabel lblicono4;
     private javax.swing.JTextArea txtDescripcion;
     private javax.swing.JTextField txtIdActividad;
-    private javax.swing.JTextField txtNombreActividad;
-    private javax.swing.JComboBox<String> txtSeleccionarActividad;
-    private javax.swing.JLabel txtSeleccionarColonia;
+    private javax.swing.JComboBox<String> txtSeleccionarColonia;
     private javax.swing.JComboBox<String> txtSeleccionarCuadrilla;
     // End of variables declaration//GEN-END:variables
 }

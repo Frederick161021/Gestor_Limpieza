@@ -26,7 +26,6 @@ public class menuAdmin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel7 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         lblBienvenido = new javax.swing.JLabel();
@@ -45,12 +44,6 @@ public class menuAdmin extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         lblCCM = new javax.swing.JLabel();
 
-        jLabel7.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 153, 153));
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/punto.png"))); // NOI18N
-        jLabel7.setText("Clean Colony Manager");
-        jLabel7.setMaximumSize(new java.awt.Dimension(723, 512));
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(204, 255, 255));
@@ -58,23 +51,23 @@ public class menuAdmin extends javax.swing.JFrame {
 
         lblBienvenido.setBackground(new java.awt.Color(204, 204, 204));
         lblBienvenido.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        lblBienvenido.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ajustes.png"))); // NOI18N
         lblBienvenido.setText("BIENVENIDO ADMINISTRADOR");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(34, 34, 34)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(41, Short.MAX_VALUE)
                 .addComponent(lblBienvenido)
-                .addContainerGap(37, Short.MAX_VALUE))
+                .addGap(30, 30, 30))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(lblBienvenido)
-                .addGap(0, 18, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, 430, 50));
@@ -142,7 +135,7 @@ public class menuAdmin extends javax.swing.JFrame {
         lblGestionCuadrillas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cola.png"))); // NOI18N
         lblGestionCuadrillas.setText("jLabel3");
 
-        btnGestionColonias.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ssss.png"))); // NOI18N
+        btnGestionColonias.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/casa.png"))); // NOI18N
         btnGestionColonias.setText("jLabel4");
 
         lblGestionActividades2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/crucigrama.png"))); // NOI18N
@@ -218,7 +211,7 @@ public class menuAdmin extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnReporteFinal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblReporteFinal))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                         .addComponent(jLabel8)
@@ -314,7 +307,6 @@ public class menuAdmin extends javax.swing.JFrame {
     private java.awt.Button btnGestionUsuarios;
     private java.awt.Button btnReporteFinal;
     private java.awt.Button btnSalir;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;

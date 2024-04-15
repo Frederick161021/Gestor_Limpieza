@@ -26,20 +26,6 @@ public class gestionCuadrillas extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        menuBar1 = new java.awt.MenuBar();
-        menu1 = new java.awt.Menu();
-        menu2 = new java.awt.Menu();
-        jPanel6 = new javax.swing.JPanel();
-        button8 = new java.awt.Button();
-        button9 = new java.awt.Button();
-        button10 = new java.awt.Button();
-        button11 = new java.awt.Button();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         lblGestionCuadrillas = new javax.swing.JLabel();
@@ -58,7 +44,6 @@ public class gestionCuadrillas extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
         lblIdCuadrilla = new javax.swing.JLabel();
         lblNombreCuadrilla = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
         lblJefeCuadrilla = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
         lblMiembrosDisponibles = new javax.swing.JLabel();
@@ -71,129 +56,15 @@ public class gestionCuadrillas extends javax.swing.JFrame {
         btnConsultar = new java.awt.Button();
         btnGuardar = new java.awt.Button();
         btnActualizar = new java.awt.Button();
-        jLabel19 = new javax.swing.JLabel();
         lblFondo = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
         lblActualizar = new javax.swing.JLabel();
         lblGuardar = new javax.swing.JLabel();
         lblConsultar = new javax.swing.JLabel();
         lblEliminar = new javax.swing.JLabel();
         btnMenu = new java.awt.Button();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
         lblPuntoRojo = new javax.swing.JLabel();
         lblVerCuadrillas = new javax.swing.JLabel();
         lblMenu1 = new javax.swing.JLabel();
-
-        menu1.setLabel("File");
-        menuBar1.add(menu1);
-
-        menu2.setLabel("Edit");
-        menuBar1.add(menu2);
-
-        jPanel6.setBackground(new java.awt.Color(204, 204, 255));
-
-        button8.setActionCommand("ACTUALIZAR");
-        button8.setBackground(new java.awt.Color(255, 51, 51));
-        button8.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        button8.setLabel("ELIMINAR");
-        button8.setName("btnEliminar"); // NOI18N
-
-        button9.setActionCommand("ACTUALIZAR");
-        button9.setBackground(new java.awt.Color(102, 255, 255));
-        button9.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        button9.setLabel("CONSULTAR");
-        button9.setName("btnConsultar"); // NOI18N
-        button9.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button9ActionPerformed(evt);
-            }
-        });
-
-        button10.setBackground(new java.awt.Color(102, 255, 102));
-        button10.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        button10.setLabel("GUARDAR");
-        button10.setName("btnGuardar"); // NOI18N
-
-        button11.setActionCommand("ACTUALIZAR");
-        button11.setBackground(new java.awt.Color(255, 255, 51));
-        button11.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        button11.setLabel("ACTUALIZAR");
-        button11.setName("btnActualizar"); // NOI18N
-
-        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/actualizar.png"))); // NOI18N
-
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/limpieza.png"))); // NOI18N
-
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/boton-eliminar.png"))); // NOI18N
-
-        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/busqueda-de-datos.png"))); // NOI18N
-
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/disco-flexible.png"))); // NOI18N
-
-        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
-        jPanel6.setLayout(jPanel6Layout);
-        jPanel6Layout.setHorizontalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(button10, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(button9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(button11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(button8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addGap(0, 0, Short.MAX_VALUE))
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(32, 32, 32)
-                        .addComponent(jLabel14, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(40, 40, 40)
-                        .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addGap(32, 32, 32)
-                        .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel6Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 146, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel6Layout.setVerticalGroup(
-            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel6Layout.createSequentialGroup()
-                .addComponent(jLabel15, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(89, 89, 89)
-                .addComponent(button10, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel18)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(button9, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel17)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(button11, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel14)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(button8, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel16)
-                .addGap(9, 9, 9))
-        );
-
-        jLabel4.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 153, 153));
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/punto.png"))); // NOI18N
-        jLabel4.setText("Clean Colony Manager");
-        jLabel4.setMaximumSize(new java.awt.Dimension(723, 512));
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -312,11 +183,6 @@ public class gestionCuadrillas extends javax.swing.JFrame {
 
         jPanel3.add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 190, 50));
 
-        jLabel6.setBackground(new java.awt.Color(204, 204, 204));
-        jLabel6.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
-        jLabel6.setText("ID DE CUADRILLA:");
-        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
-
         javax.swing.GroupLayout lblJefeCuadrillaLayout = new javax.swing.GroupLayout(lblJefeCuadrilla);
         lblJefeCuadrilla.setLayout(lblJefeCuadrillaLayout);
         lblJefeCuadrillaLayout.setHorizontalGroup(
@@ -420,20 +286,8 @@ public class gestionCuadrillas extends javax.swing.JFrame {
         btnActualizar.setLabel("ACTUALIZAR");
         btnActualizar.setName("btnActualizar"); // NOI18N
 
-        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/actualizar.png"))); // NOI18N
-        jLabel19.setName("lblActualizar"); // NOI18N
-
         lblFondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/limpieza.png"))); // NOI18N
         lblFondo.setName("lblTina"); // NOI18N
-
-        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/boton-eliminar.png"))); // NOI18N
-        jLabel21.setName("lblBasura"); // NOI18N
-
-        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/busqueda-de-datos.png"))); // NOI18N
-        jLabel22.setName("lblLupa"); // NOI18N
-
-        jLabel23.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/disco-flexible.png"))); // NOI18N
-        jLabel23.setName("lblDisco"); // NOI18N
 
         lblActualizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/actualizar.png"))); // NOI18N
         lblActualizar.setName("lblCarrito"); // NOI18N
@@ -453,38 +307,28 @@ public class gestionCuadrillas extends javax.swing.JFrame {
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel7Layout.createSequentialGroup()
+                            .addGap(44, 44, 44)
+                            .addComponent(lblGuardar))
+                        .addGroup(jPanel7Layout.createSequentialGroup()
+                            .addGap(47, 47, 47)
+                            .addComponent(lblConsultar)))
                     .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel7Layout.createSequentialGroup()
-                                .addGap(44, 44, 44)
-                                .addComponent(lblGuardar)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel7Layout.createSequentialGroup()
-                                .addGap(47, 47, 47)
-                                .addComponent(lblConsultar)))
-                        .addGap(163, 163, 163)
-                        .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel21, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(lblActualizar)
-                                .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(lblEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                        .addGap(41, 41, 41)
+                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(lblActualizar)
+                            .addComponent(lblEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addGap(6, 6, 6)
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblFondo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnConsultar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 0, Short.MAX_VALUE))))
+                    .addComponent(lblFondo)
+                    .addComponent(btnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnConsultar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -492,36 +336,21 @@ public class gestionCuadrillas extends javax.swing.JFrame {
                 .addComponent(lblFondo, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(56, 56, 56)
                 .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addGap(43, 43, 43)
-                        .addComponent(jLabel23))
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addComponent(lblGuardar)))
+                .addGap(21, 21, 21)
+                .addComponent(lblGuardar)
                 .addGap(28, 28, 28)
                 .addComponent(btnConsultar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel22)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addGap(19, 19, 19)
-                        .addComponent(lblConsultar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(20, 20, 20)
-                        .addComponent(lblActualizar)
-                        .addGap(20, 20, 20)
-                        .addComponent(btnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                .addComponent(jLabel19)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(19, 19, 19)
+                .addComponent(lblConsultar)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnActualizar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(lblActualizar)
+                .addGap(20, 20, 20)
+                .addComponent(btnEliminar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(lblEliminar)
-                .addGap(38, 38, 38)
-                .addComponent(jLabel21)
-                .addGap(9, 9, 9))
+                .addGap(47, 47, 47))
         );
 
         jPanel1.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 0, 140, 740));
@@ -536,14 +365,6 @@ public class gestionCuadrillas extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 670, 90, 40));
-
-        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ver.png"))); // NOI18N
-        jLabel24.setName("lblOjo"); // NOI18N
-        jPanel1.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 670, 78, -1));
-
-        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/menu.png"))); // NOI18N
-        jLabel25.setName("lblMenu"); // NOI18N
-        jPanel1.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 670, 78, -1));
 
         lblPuntoRojo.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
         lblPuntoRojo.setForeground(new java.awt.Color(0, 153, 153));
@@ -578,10 +399,6 @@ public class gestionCuadrillas extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void button9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_button9ActionPerformed
 
     private void btnMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMenuActionPerformed
         // TODO add your handling code here:
@@ -642,29 +459,11 @@ public class gestionCuadrillas extends javax.swing.JFrame {
     private java.awt.Button btnGuardar;
     private java.awt.Button btnMenu;
     private java.awt.Button btnVerCuadrillas;
-    private java.awt.Button button10;
-    private java.awt.Button button11;
-    private java.awt.Button button8;
-    private java.awt.Button button9;
     private javax.swing.JComboBox<String> cbJefeCuadrilla;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
@@ -685,9 +484,6 @@ public class gestionCuadrillas extends javax.swing.JFrame {
     private javax.swing.JLabel lblPuntoRojo;
     private javax.swing.JLabel lblSeleccionarCuadrilla;
     private javax.swing.JLabel lblVerCuadrillas;
-    private java.awt.Menu menu1;
-    private java.awt.Menu menu2;
-    private java.awt.MenuBar menuBar1;
     private javax.swing.JTextField txtIdCuadrilla;
     private javax.swing.JComboBox<String> txtMiembrosDisponibles;
     private javax.swing.JTextField txtNombreCuadrilla;

@@ -35,18 +35,9 @@ public class gestionColonias extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jTable2 = new javax.swing.JTable();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        jTable3 = new javax.swing.JTable();
-        jScrollPane4 = new javax.swing.JScrollPane();
-        jTable4 = new javax.swing.JTable();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         lblGestionColonias = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
         txtIdAgregar = new javax.swing.JTextField();
         jPanel4 = new javax.swing.JPanel();
         lblNombreColonia = new javax.swing.JLabel();
@@ -57,68 +48,14 @@ public class gestionColonias extends javax.swing.JFrame {
         jScrollPane5 = new javax.swing.JScrollPane();
         jTable5 = new javax.swing.JTable();
         lblPuntoRojo = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
         lblID = new javax.swing.JLabel();
         txtConsultarColonia = new javax.swing.JTextField();
         btnVerColonias = new java.awt.Button();
-        jLabel24 = new javax.swing.JLabel();
         btnMenu = new java.awt.Button();
         btnConsultarColonia = new java.awt.Button();
         btnAgregar = new java.awt.Button();
         lblicono1 = new javax.swing.JLabel();
         lblicono4 = new javax.swing.JLabel();
-
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-        jScrollPane1.setViewportView(jTable1);
-
-        jTable2.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-        jScrollPane2.setViewportView(jTable2);
-
-        jTable3.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-        jScrollPane3.setViewportView(jTable3);
-
-        jTable4.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
-            },
-            new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
-            }
-        ));
-        jScrollPane4.setViewportView(jTable4);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -147,9 +84,6 @@ public class gestionColonias extends javax.swing.JFrame {
         );
 
         jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 10, 290, 50));
-
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/menu.png"))); // NOI18N
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 620, -1, -1));
 
         txtIdAgregar.setName("txtAgregarId"); // NOI18N
         jPanel1.add(txtIdAgregar, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 540, 220, -1));
@@ -185,7 +119,7 @@ public class gestionColonias extends javax.swing.JFrame {
         });
         jScrollPane6.setViewportView(jtGestionColonias);
 
-        jPanel5.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 910, 280));
+        jPanel5.add(jScrollPane6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1170, 280));
 
         scrollPane2.add(jPanel5);
 
@@ -202,8 +136,6 @@ public class gestionColonias extends javax.swing.JFrame {
         ));
         jScrollPane5.setViewportView(jTable5);
 
-        scrollPane2.add(jScrollPane5);
-
         jPanel1.add(scrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 220, 1210, 280));
 
         lblPuntoRojo.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
@@ -213,10 +145,6 @@ public class gestionColonias extends javax.swing.JFrame {
         lblPuntoRojo.setMaximumSize(new java.awt.Dimension(723, 512));
         lblPuntoRojo.setName("lblPuntoRojo"); // NOI18N
         jPanel1.add(lblPuntoRojo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
-
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/calles.png"))); // NOI18N
-        jLabel13.setName("lblCalles"); // NOI18N
-        jPanel1.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 70, -1, -1));
 
         lblID.setBackground(new java.awt.Color(204, 204, 204));
         lblID.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
@@ -237,9 +165,6 @@ public class gestionColonias extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnVerColonias, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 610, 150, 40));
-
-        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ver.png"))); // NOI18N
-        jPanel1.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 620, 78, -1));
 
         btnMenu.setActionCommand("MENU");
         btnMenu.setBackground(new java.awt.Color(255, 102, 102));
@@ -346,23 +271,12 @@ public class gestionColonias extends javax.swing.JFrame {
     private java.awt.Button btnConsultarColonia;
     private java.awt.Button btnMenu;
     private java.awt.Button btnVerColonias;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel24;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
-    private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JScrollPane jScrollPane5;
     private javax.swing.JScrollPane jScrollPane6;
-    private javax.swing.JTable jTable1;
-    private javax.swing.JTable jTable2;
-    private javax.swing.JTable jTable3;
-    private javax.swing.JTable jTable4;
     private javax.swing.JTable jTable5;
     private javax.swing.JTable jtGestionColonias;
     private javax.swing.JLabel lblGestionColonias;

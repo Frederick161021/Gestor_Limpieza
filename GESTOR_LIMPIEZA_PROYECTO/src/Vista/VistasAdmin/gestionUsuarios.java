@@ -44,32 +44,22 @@ public class gestionUsuarios extends javax.swing.JFrame {
         txtCorreo = new javax.swing.JTextField();
         lblpassword = new javax.swing.JLabel();
         txtContrasena = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
         lblUsuario = new javax.swing.JLabel();
         txtUsuario = new javax.swing.JTextField();
         lblTelefono = new javax.swing.JLabel();
         txtTelefono = new javax.swing.JTextField();
         btnVerUsuarios = new java.awt.Button();
-        jLabel12 = new javax.swing.JLabel();
         btnMenu = new java.awt.Button();
-        jLabel17 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
         lblPuntoRojo = new javax.swing.JLabel();
         lblGestion2 = new javax.swing.JLabel();
         lblVerUsuarios = new javax.swing.JLabel();
         lblMenu2 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
-        jPanel5 = new javax.swing.JPanel();
+        cbRol = new javax.swing.JComboBox<>();
         jPanel6 = new javax.swing.JPanel();
-        btnEliminar = new java.awt.Button();
         btnConsultar = new java.awt.Button();
         btnGuardar = new java.awt.Button();
         btnDelete = new java.awt.Button();
-        jLabel13 = new javax.swing.JLabel();
         lblfondo = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
         lblEliminar = new javax.swing.JLabel();
         btnActualizar1 = new java.awt.Button();
         lblGuardar1 = new javax.swing.JLabel();
@@ -102,7 +92,7 @@ public class gestionUsuarios extends javax.swing.JFrame {
                 .addContainerGap(15, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 50, 290, 50));
+        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 30, 290, 50));
 
         jPanel3.setBackground(java.awt.SystemColor.activeCaption);
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -164,10 +154,6 @@ public class gestionUsuarios extends javax.swing.JFrame {
         txtContrasena.setName("txtContrasena"); // NOI18N
         jPanel3.add(txtContrasena, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 280, 180, -1));
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Jefe de Cuadrilla", "Empleado" }));
-        jComboBox1.setSelectedIndex(1);
-        jPanel3.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, -40, 190, -1));
-
         lblUsuario.setBackground(new java.awt.Color(204, 204, 204));
         lblUsuario.setFont(new java.awt.Font("Segoe UI Historic", 1, 14)); // NOI18N
         lblUsuario.setText("USUARIO");
@@ -197,24 +183,12 @@ public class gestionUsuarios extends javax.swing.JFrame {
         });
         jPanel1.add(btnVerUsuarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 620, 160, 50));
 
-        jLabel12.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/añadir-usuario.png"))); // NOI18N
-        jLabel12.setName("lblUsuarioNegro"); // NOI18N
-        jPanel1.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 100, -1, -1));
-
         btnMenu.setActionCommand("MENU");
         btnMenu.setBackground(new java.awt.Color(255, 153, 153));
         btnMenu.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
         btnMenu.setLabel("MENU");
         btnMenu.setName("btnMenu"); // NOI18N
         jPanel1.add(btnMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 620, 100, 50));
-
-        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/menu.png"))); // NOI18N
-        jLabel17.setName("lblMenu"); // NOI18N
-        jPanel1.add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 630, 78, -1));
-
-        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ver.png"))); // NOI18N
-        jLabel19.setName("lblOjo"); // NOI18N
-        jPanel1.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 630, 78, -1));
 
         lblPuntoRojo.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
         lblPuntoRojo.setForeground(new java.awt.Color(0, 153, 153));
@@ -226,7 +200,7 @@ public class gestionUsuarios extends javax.swing.JFrame {
 
         lblGestion2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/añadir-usuario.png"))); // NOI18N
         lblGestion2.setName("lblManos"); // NOI18N
-        jPanel1.add(lblGestion2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 100, 130, 140));
+        jPanel1.add(lblGestion2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, 140, 140));
 
         lblVerUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ver.png"))); // NOI18N
         lblVerUsuarios.setName("lblCarrito"); // NOI18N
@@ -236,23 +210,13 @@ public class gestionUsuarios extends javax.swing.JFrame {
         lblMenu2.setName("lblCarrito"); // NOI18N
         jPanel1.add(lblMenu2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 620, 40, 40));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 0, 480, 700));
+        cbRol.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Jefe Cuadrilla", "Trabajador" }));
+        jPanel1.add(cbRol, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 140, 230, -1));
 
-        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(627, 0, -1, -1));
-
-        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(615, 7, -1, -1));
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -20, 480, 700));
 
         jPanel6.setBackground(new java.awt.Color(204, 204, 255));
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        btnEliminar.setActionCommand("ACTUALIZAR");
-        btnEliminar.setBackground(new java.awt.Color(255, 51, 51));
-        btnEliminar.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        btnEliminar.setLabel("ELIMINAR");
-        btnEliminar.setName("btnEliminar"); // NOI18N
-        jPanel6.add(btnEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 710, 135, 30));
 
         btnConsultar.setActionCommand("ACTUALIZAR");
         btnConsultar.setBackground(new java.awt.Color(102, 255, 255));
@@ -284,25 +248,9 @@ public class gestionUsuarios extends javax.swing.JFrame {
         });
         jPanel6.add(btnDelete, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 560, 140, 30));
 
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/actualizar.png"))); // NOI18N
-        jLabel13.setName("lblActualizar"); // NOI18N
-        jPanel6.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(32, 660, 78, -1));
-
         lblfondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/limpieza.png"))); // NOI18N
         lblfondo.setName("lblTina"); // NOI18N
         jPanel6.add(lblfondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 146, 156));
-
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/boton-eliminar.png"))); // NOI18N
-        jLabel15.setName("lblBasura"); // NOI18N
-        jPanel6.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(31, 822, 78, -1));
-
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/busqueda-de-datos.png"))); // NOI18N
-        jLabel16.setName("lblLupa"); // NOI18N
-        jPanel6.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 428, 78, -1));
-
-        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/disco-flexible.png"))); // NOI18N
-        jLabel18.setName("lblDisco"); // NOI18N
-        jPanel6.add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(111, 285, 78, -1));
 
         lblEliminar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/boton-eliminar.png"))); // NOI18N
         lblEliminar.setName("lblCarrito"); // NOI18N
@@ -341,10 +289,6 @@ public class gestionUsuarios extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_btnConsultarActionPerformed
 
-    private void btnVerUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerUsuariosActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnVerUsuariosActionPerformed
-
     private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnDeleteActionPerformed
@@ -352,6 +296,10 @@ public class gestionUsuarios extends javax.swing.JFrame {
     private void btnActualizar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActualizar1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_btnActualizar1ActionPerformed
+
+    private void btnVerUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerUsuariosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnVerUsuariosActionPerformed
 
     /**
      * @param args the command line arguments
@@ -393,23 +341,13 @@ public class gestionUsuarios extends javax.swing.JFrame {
     private java.awt.Button btnActualizar1;
     private java.awt.Button btnConsultar;
     private java.awt.Button btnDelete;
-    private java.awt.Button btnEliminar;
     private java.awt.Button btnGuardar;
     private java.awt.Button btnMenu;
     private java.awt.Button btnVerUsuarios;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
+    private javax.swing.JComboBox<String> cbRol;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JLabel lblAMaterno;
     private javax.swing.JLabel lblAPaterno;
