@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package Views_admin;
+package Vista.VistasAdmin;
 
 /**
  *
@@ -26,55 +26,47 @@ public class menuAdmin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel7 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
+        lblBienvenido = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
-        button1 = new java.awt.Button();
-        button2 = new java.awt.Button();
-        button3 = new java.awt.Button();
-        button4 = new java.awt.Button();
-        button5 = new java.awt.Button();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        button6 = new java.awt.Button();
+        btnColonias = new java.awt.Button();
+        btnGestionActividadesK = new java.awt.Button();
+        btnGestionCuadrillas = new java.awt.Button();
+        btnGestionUsuarios = new java.awt.Button();
+        btnReporteFinal = new java.awt.Button();
+        lblGestionUsuarios = new javax.swing.JLabel();
+        lblGestionCuadrillas = new javax.swing.JLabel();
+        btnGestionColonias = new javax.swing.JLabel();
+        lblGestionActividades2 = new javax.swing.JLabel();
+        lblReporteFinal = new javax.swing.JLabel();
+        btnSalir = new java.awt.Button();
         jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-
-        jLabel7.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 153, 153));
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/punto.png"))); // NOI18N
-        jLabel7.setText("Clean Colony Manager");
-        jLabel7.setMaximumSize(new java.awt.Dimension(723, 512));
+        lblCCM = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(204, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setBackground(new java.awt.Color(204, 204, 204));
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ajustes.png"))); // NOI18N
-        jLabel1.setText("BIENVENIDO ADMINISTRADOR");
+        lblBienvenido.setBackground(new java.awt.Color(204, 204, 204));
+        lblBienvenido.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        lblBienvenido.setText("BIENVENIDO ADMINISTRADOR");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel1)
-                .addContainerGap(23, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(41, Short.MAX_VALUE)
+                .addComponent(lblBienvenido)
+                .addGap(30, 30, 30))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
+                .addComponent(lblBienvenido)
                 .addContainerGap())
         );
 
@@ -82,82 +74,82 @@ public class menuAdmin extends javax.swing.JFrame {
 
         jPanel3.setBackground(javax.swing.UIManager.getDefaults().getColor("Button.light"));
 
-        button1.setActionCommand("GESTIÓN DE ACTIVIDADES");
-        button1.setBackground(java.awt.SystemColor.activeCaption);
-        button1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        button1.setLabel("GESTIÓN DE COLONIAS");
-        button1.setName("btnGestionColonias"); // NOI18N
-        button1.addActionListener(new java.awt.event.ActionListener() {
+        btnColonias.setActionCommand("GESTIÓN DE ACTIVIDADES");
+        btnColonias.setBackground(java.awt.SystemColor.activeCaption);
+        btnColonias.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        btnColonias.setLabel("GESTIÓN DE COLONIAS");
+        btnColonias.setName("btnGestionColonias"); // NOI18N
+        btnColonias.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button1ActionPerformed(evt);
+                btnColoniasActionPerformed(evt);
             }
         });
 
-        button2.setActionCommand("GESTIÓN DE ACTIVIDADES");
-        button2.setBackground(java.awt.SystemColor.activeCaption);
-        button2.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        button2.setLabel("GESTIÓN DE ACTIVIDADES");
-        button2.setName("btnGestionActividades"); // NOI18N
-        button2.addActionListener(new java.awt.event.ActionListener() {
+        btnGestionActividadesK.setActionCommand("GESTIÓN DE ACTIVIDADES");
+        btnGestionActividadesK.setBackground(java.awt.SystemColor.activeCaption);
+        btnGestionActividadesK.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        btnGestionActividadesK.setLabel("GESTIÓN DE ACTIVIDADES");
+        btnGestionActividadesK.setName("btnGestionActividadesK"); // NOI18N
+        btnGestionActividadesK.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button2ActionPerformed(evt);
+                btnGestionActividadesKActionPerformed(evt);
             }
         });
 
-        button3.setActionCommand("GESTIÓN DE ACTIVIDADES");
-        button3.setBackground(java.awt.SystemColor.activeCaption);
-        button3.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        button3.setLabel("GESTIÓN DE CUADRILLAS");
-        button3.setName("btnGestionCuadrilla"); // NOI18N
-        button3.addActionListener(new java.awt.event.ActionListener() {
+        btnGestionCuadrillas.setActionCommand("GESTIÓN DE ACTIVIDADES");
+        btnGestionCuadrillas.setBackground(java.awt.SystemColor.activeCaption);
+        btnGestionCuadrillas.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        btnGestionCuadrillas.setLabel("GESTIÓN DE CUADRILLAS");
+        btnGestionCuadrillas.setName("btnGestionCuadrilla"); // NOI18N
+        btnGestionCuadrillas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button3ActionPerformed(evt);
+                btnGestionCuadrillasActionPerformed(evt);
             }
         });
 
-        button4.setActionCommand("GESTIÓN DE USUARIOS");
-        button4.setBackground(java.awt.SystemColor.activeCaption);
-        button4.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        button4.setLabel("GESTION DE USUARIOS");
-        button4.setName("btnGestionUsuarios"); // NOI18N
-        button4.addActionListener(new java.awt.event.ActionListener() {
+        btnGestionUsuarios.setActionCommand("GESTIÓN DE USUARIOS");
+        btnGestionUsuarios.setBackground(java.awt.SystemColor.activeCaption);
+        btnGestionUsuarios.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        btnGestionUsuarios.setLabel("GESTION DE USUARIOS");
+        btnGestionUsuarios.setName("btnGestionUsuarios"); // NOI18N
+        btnGestionUsuarios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button4ActionPerformed(evt);
+                btnGestionUsuariosActionPerformed(evt);
             }
         });
 
-        button5.setActionCommand("GESTIÓN DE ACTIVIDADES");
-        button5.setBackground(java.awt.SystemColor.activeCaption);
-        button5.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        button5.setLabel("REPORTE DE ACTIVIDADES");
-        button5.setName("btnReporteActividades"); // NOI18N
-        button5.addActionListener(new java.awt.event.ActionListener() {
+        btnReporteFinal.setActionCommand("GESTIÓN DE ACTIVIDADES");
+        btnReporteFinal.setBackground(java.awt.SystemColor.activeCaption);
+        btnReporteFinal.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        btnReporteFinal.setLabel("REPORTE DE ACTIVIDADES");
+        btnReporteFinal.setName("btnReporteActividades"); // NOI18N
+        btnReporteFinal.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button5ActionPerformed(evt);
+                btnReporteFinalActionPerformed(evt);
             }
         });
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/agregar-usuario (1).png"))); // NOI18N
-        jLabel2.setText("jLabel2");
+        lblGestionUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/agregar-usuario (1).png"))); // NOI18N
+        lblGestionUsuarios.setText("jLabel2");
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/cola.png"))); // NOI18N
-        jLabel3.setText("jLabel3");
+        lblGestionCuadrillas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/cola.png"))); // NOI18N
+        lblGestionCuadrillas.setText("jLabel3");
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/calles.png"))); // NOI18N
-        jLabel4.setText("jLabel4");
+        btnGestionColonias.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/casa.png"))); // NOI18N
+        btnGestionColonias.setText("jLabel4");
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/crucigrama.png"))); // NOI18N
-        jLabel5.setText("jLabel5");
+        lblGestionActividades2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/crucigrama.png"))); // NOI18N
+        lblGestionActividades2.setText("jLabel5");
 
-        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/reporte.png"))); // NOI18N
-        jLabel6.setText("jLabel6");
+        lblReporteFinal.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/reporte.png"))); // NOI18N
+        lblReporteFinal.setText("jLabel6");
 
-        button6.setBackground(new java.awt.Color(255, 153, 153));
-        button6.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        button6.setLabel("SALIR");
-        button6.setName("btnSalir"); // NOI18N
+        btnSalir.setBackground(new java.awt.Color(255, 153, 153));
+        btnSalir.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        btnSalir.setLabel("SALIR");
+        btnSalir.setName("btnSalir"); // NOI18N
 
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/salida.png"))); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/salida.png"))); // NOI18N
         jLabel8.setText("jLabel8");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -169,32 +161,31 @@ public class menuAdmin extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(lblGestionCuadrillas, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblGestionUsuarios, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(button4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(button3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(btnGestionUsuarios, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnGestionCuadrillas, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnGestionColonias, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(button1, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnColonias, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(button5, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblGestionActividades2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(button2, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(btnGestionActividadesK, javax.swing.GroupLayout.PREFERRED_SIZE, 251, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                            .addComponent(lblReporteFinal, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(jPanel3Layout.createSequentialGroup()
+                                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                    .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(btnReporteFinal, javax.swing.GroupLayout.PREFERRED_SIZE, 253, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                 .addContainerGap())
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(93, 93, 93)
-                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(button6, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -203,38 +194,41 @@ public class menuAdmin extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(button4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2))
+                            .addComponent(btnGestionUsuarios, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblGestionUsuarios))
                         .addGap(33, 33, 33)
-                        .addComponent(button3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jLabel3))
+                        .addComponent(btnGestionCuadrillas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lblGestionCuadrillas))
                 .addGap(32, 32, 32)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(button1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4))
+                    .addComponent(btnColonias, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnGestionColonias))
                 .addGap(32, 32, 32)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(button2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5))
+                    .addComponent(btnGestionActividadesK, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblGestionActividades2))
                 .addGap(30, 30, 30)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(button5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel6))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
+                    .addComponent(btnReporteFinal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblReporteFinal))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(button6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel8))
-                .addGap(33, 33, 33))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                        .addComponent(jLabel8)
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+                        .addComponent(btnSalir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(26, 26, 26))))
         );
 
         jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, 330, 420));
 
-        jLabel9.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(0, 153, 153));
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/punto.png"))); // NOI18N
-        jLabel9.setText("Clean Colony Manager");
-        jLabel9.setMaximumSize(new java.awt.Dimension(723, 512));
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        lblCCM.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        lblCCM.setForeground(new java.awt.Color(0, 153, 153));
+        lblCCM.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/punto.png"))); // NOI18N
+        lblCCM.setText("Clean Colony Manager");
+        lblCCM.setMaximumSize(new java.awt.Dimension(723, 512));
+        jPanel1.add(lblCCM, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -250,25 +244,25 @@ public class menuAdmin extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1ActionPerformed
+    private void btnColoniasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnColoniasActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_button1ActionPerformed
+    }//GEN-LAST:event_btnColoniasActionPerformed
 
-    private void button2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button2ActionPerformed
+    private void btnGestionActividadesKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGestionActividadesKActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_button2ActionPerformed
+    }//GEN-LAST:event_btnGestionActividadesKActionPerformed
 
-    private void button3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button3ActionPerformed
+    private void btnGestionCuadrillasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGestionCuadrillasActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_button3ActionPerformed
+    }//GEN-LAST:event_btnGestionCuadrillasActionPerformed
 
-    private void button4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button4ActionPerformed
+    private void btnGestionUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGestionUsuariosActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_button4ActionPerformed
+    }//GEN-LAST:event_btnGestionUsuariosActionPerformed
 
-    private void button5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button5ActionPerformed
+    private void btnReporteFinalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReporteFinalActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_button5ActionPerformed
+    }//GEN-LAST:event_btnReporteFinalActionPerformed
 
     /**
      * @param args the command line arguments
@@ -306,23 +300,22 @@ public class menuAdmin extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private java.awt.Button button1;
-    private java.awt.Button button2;
-    private java.awt.Button button3;
-    private java.awt.Button button4;
-    private java.awt.Button button5;
-    private java.awt.Button button6;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
+    private java.awt.Button btnColonias;
+    private java.awt.Button btnGestionActividadesK;
+    private javax.swing.JLabel btnGestionColonias;
+    private java.awt.Button btnGestionCuadrillas;
+    private java.awt.Button btnGestionUsuarios;
+    private java.awt.Button btnReporteFinal;
+    private java.awt.Button btnSalir;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JLabel lblBienvenido;
+    private javax.swing.JLabel lblCCM;
+    private javax.swing.JLabel lblGestionActividades2;
+    private javax.swing.JLabel lblGestionCuadrillas;
+    private javax.swing.JLabel lblGestionUsuarios;
+    private javax.swing.JLabel lblReporteFinal;
     // End of variables declaration//GEN-END:variables
 }

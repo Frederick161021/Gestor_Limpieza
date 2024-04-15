@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package Views_admin;
+package Vista.VistasAdmin;
 
 /**
  *
@@ -31,14 +31,15 @@ public class reporteActividades extends javax.swing.JFrame {
         jPanel3 = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         jPanel5 = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
+        lblCCM = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        jTReporteActividades = new javax.swing.JTable();
         jLabel2 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        btnVolver = new java.awt.Button();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -105,13 +106,13 @@ public class reporteActividades extends javax.swing.JFrame {
 
         jPanel1.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1070, 10));
 
-        jLabel4.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 153, 153));
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/punto.png"))); // NOI18N
-        jLabel4.setText("Clean Colony Manager");
-        jLabel4.setMaximumSize(new java.awt.Dimension(723, 512));
-        jLabel4.setName("lblPuntoRojo"); // NOI18N
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, -1, -1));
+        lblCCM.setFont(new java.awt.Font("Segoe UI Black", 1, 18)); // NOI18N
+        lblCCM.setForeground(new java.awt.Color(0, 153, 153));
+        lblCCM.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/punto.png"))); // NOI18N
+        lblCCM.setText("Clean Colony Manager");
+        lblCCM.setMaximumSize(new java.awt.Dimension(723, 512));
+        lblCCM.setName("lblPuntoRojo"); // NOI18N
+        jPanel1.add(lblCCM, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, -1, -1));
 
         jPanel6.setBackground(new java.awt.Color(255, 102, 102));
 
@@ -136,9 +137,9 @@ public class reporteActividades extends javax.swing.JFrame {
 
         jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 70, 1060, 30));
 
-        jTable1.setBackground(new java.awt.Color(204, 255, 204));
-        jTable1.setFont(new java.awt.Font("Trebuchet MS", 1, 12)); // NOI18N
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        jTReporteActividades.setBackground(new java.awt.Color(204, 255, 204));
+        jTReporteActividades.setFont(new java.awt.Font("Trebuchet MS", 1, 12)); // NOI18N
+        jTReporteActividades.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null, null, null, null, null},
                 {null, null, null, null, null, null, null, null, null},
@@ -149,22 +150,34 @@ public class reporteActividades extends javax.swing.JFrame {
                 "ID ACTIVIDAD", "ACTIVIDAD", "JEFE CUADRILLA", "CUADRILLA", "COLONIA", "CODIGO POSTAL", "ESTATUS", "EVIDENCIAS", "FECHA DE FINALIZACIÓN"
             }
         ));
-        jScrollPane1.setViewportView(jTable1);
+        jScrollPane1.setViewportView(jTReporteActividades);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 140, 1060, 210));
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ropa-limpia.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/ropa-limpia.png"))); // NOI18N
         jLabel2.setName("lblCamisa"); // NOI18N
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 420, 40, 40));
 
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/carro-de-limpieza.png"))); // NOI18N
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/carro-de-limpieza.png"))); // NOI18N
         jLabel5.setName("lblCarrito"); // NOI18N
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 420, 40, 40));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/volver.png"))); // NOI18N
-        jLabel7.setText("VOLVER");
+        jLabel7.setFont(new java.awt.Font("Trebuchet MS", 1, 12)); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/volver.png"))); // NOI18N
         jLabel7.setName("lblVolver"); // NOI18N
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 420, 90, 40));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 420, 40, 40));
+
+        btnVolver.setActionCommand("MENU");
+        btnVolver.setBackground(new java.awt.Color(255, 255, 153));
+        btnVolver.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        btnVolver.setLabel("VOLVER");
+        btnVolver.setName("btnVolver"); // NOI18N
+        btnVolver.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnVolverActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnVolver, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 420, 120, 40));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -181,6 +194,10 @@ public class reporteActividades extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnVolverActionPerformed
 
     /**
      * @param args the command line arguments
@@ -218,9 +235,9 @@ public class reporteActividades extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private java.awt.Button btnVolver;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel1;
@@ -230,6 +247,7 @@ public class reporteActividades extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable jTReporteActividades;
+    private javax.swing.JLabel lblCCM;
     // End of variables declaration//GEN-END:variables
 }
