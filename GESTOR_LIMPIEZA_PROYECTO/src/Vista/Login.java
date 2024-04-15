@@ -36,7 +36,6 @@ public class Login extends javax.swing.JFrame {
         lblUsuario = new javax.swing.JLabel();
         txtUsuario = new javax.swing.JTextField();
         btnIngresar = new java.awt.Button();
-        jLabel4 = new javax.swing.JLabel();
         txtContraseña = new javax.swing.JPasswordField();
         jLabel1 = new javax.swing.JLabel();
 
@@ -119,10 +118,6 @@ public class Login extends javax.swing.JFrame {
         btnIngresar.setName("btnIngresar"); // NOI18N
         Login.add(btnIngresar, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 392, -1, 50));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/ingresar.png"))); // NOI18N
-        jLabel4.setName("lblIngresar"); // NOI18N
-        Login.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 400, -1, -1));
-
         txtContraseña.setText("jPasswordField1");
         Login.add(txtContraseña, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 300, 330, 40));
 
@@ -184,7 +179,6 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JPanel Login;
     private java.awt.Button btnIngresar;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JLabel lblBienvenidoUsuario;
